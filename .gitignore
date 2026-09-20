@@ -1,0 +1,5 @@
+# El CV contiene teléfono y datos personales. Este repositorio es PÚBLICO:
+# cualquier archivo commiteado aquí queda visible y permanece en el historial
+# de git aunque se borre después. Ver SETUP.md, sección "CV".
+CV*.pdf
+*.pdf
