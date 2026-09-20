@@ -1,8 +1,8 @@
-<h1 align="center">Ehud {{APELLIDO}}</h1>
+<h1 align="center">Ehud Aguirre B.</h1>
 
 <p align="center">
-  <strong>Desarrollador Mainframe</strong> — COBOL · JCL · CICS · DB2 · z/OS<br>
-  Banca y Sector Financiero
+  <strong>Desarrollador Full Stack · Mainframe COBOL</strong><br>
+  <sub>Java 21 · Spring Boot · Angular · PostgreSQL &nbsp;—&nbsp; COBOL · JCL · CICS · DB2 · z/OS</sub>
 </p>
 
 <p align="center">
@@ -12,12 +12,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Disponible_para_nuevas_oportunidades-0A66C2?style=flat-square" alt="Disponible para nuevas oportunidades">
+  <img src="https://img.shields.io/badge/Abierto_a_oportunidades_en_Mainframe_y_Banca-0A66C2?style=flat-square" alt="Abierto a oportunidades en Mainframe y Banca">
 </p>
 
 <div align="center">
 
-`{{CIUDAD, PAÍS}}` · `{{UTC-X}}` · `{{Remoto / Híbrido / Presencial}}` · Español nativo · Inglés {{NIVEL}}
+Lima, Perú · UTC−5 · Híbrido o remoto · Español nativo · Inglés técnico (lectura de documentación)
 
 </div>
 
@@ -25,11 +25,55 @@
 
 ## Sobre mí
 
-Desarrollo y mantengo sistemas críticos **batch y online** para banca con COBOL, JCL, CICS y DB2 sobre z/OS: conciliación y cuadre en ventana nocturna, procesamiento de transacciones y resolución de incidencias en entornos de core bancario en producción.
+Desarrollo aplicaciones empresariales con Java 21, Spring Boot, Angular y PostgreSQL, llevando el producto desde el modelado de datos hasta el despliegue en producción.
 
-{{ANIOS}} años en mainframe. La mayor parte de ese trabajo vive en repositorios cerrados bajo NDA, así que este perfil cuenta **qué hago y a qué escala**, no el código.
+En paralelo vengo construyendo perfil mainframe: un año analizando procesos batch reales de tarjetas de crédito (JCL, COBOL, DB2) en un entorno de producción, y un laboratorio z/OS propio donde practico COBOL, JCL, CICS, VSAM y DB2. Me interesan los proyectos de banca y de modernización de sistemas legacy, donde ese doble perfil suma.
 
-En paralelo mantengo el pie en el stack moderno — Java, Spring, Python, React y Angular — y en las herramientas que están acercando el mainframe al desarrollo actual: Git, VS Code, Zowe e IBM Z Open Editor.
+> Casi todo mi trabajo vive en repositorios privados de cliente y de empresa. Este perfil describe **qué construí, con qué tecnología y a qué escala**, no el código.
+
+---
+
+## Mainframe
+
+**Practicante de Desarrollo Mainframe · OLSSA** — Lima · ene 2025 – ene 2026
+
+- Análisis de procesos **batch de tarjetas de crédito en producción**: lectura de PROCs y JCL, identificación de pasos, datasets de entrada/salida, parámetros de PARMLIB y puntos de rearranque.
+- Diagramas de flujo de datos por proceso (archivos, programas, tablas DB2, copys, utilitarios) como documentación para análisis de impacto.
+- Revisión de programas COBOL en producción y del modelo de datos del sistema de tarjetas.
+- **Migración de programas COBOL a la versión 6.3.**
+- Operaciones *Retrieve*, *Add* y *Update* de componentes en **Endevor** desde TSO.
+- Ejecución de JOBs, programas y pruebas unitarias; validación de archivos generados.
+- Documentación de los pases a UAT y soporte durante el **batch nocturno** en el pase a producción.
+
+`z/OS` `COBOL` `JCL` `DB2` `SORT` `ISPF/TSO` `CICS` `Endevor`
+
+**Laboratorio z/OS propio**
+
+- Instalación y configuración de un entorno z/OS con DB2, CICS y VSAM para práctica de desarrollo.
+- **COBOL-CICS** — programas pseudo-conversacionales con `RETURN TRANSID` y COMMAREA, mapas BMS (`DFHMSD`, `DFHMDI`, `DFHMDF`), `LINK` y `XCTL`, acceso a archivos VSAM y transacciones CEDA, CEMT, CECI y CEDF.
+- **COBOL-DB2** — SQL embebido, DCLGEN, precompilación y BIND, manejo de SQLCODE, cursores para múltiples registros e indicadores de nulos.
+- Documentación técnica propia de todo el proceso, disponible a solicitud.
+
+---
+
+## Full Stack
+
+**Partner Tech** — Lima · ene 2026 – actualidad · *Java 21 · Spring Boot · Angular · PostgreSQL · Scrum*
+
+- **Eternium** — aplicación de gestión de cementerios. Participé en el desarrollo del producto, donde se implementó **arquitectura hexagonal** (puertos y adaptadores) para aislar el dominio de la infraestructura.
+- **Centrix** — plataforma de creación de workflows documentarios. Participé en el desarrollo del **motor de flujos de aprobación** para el esquema **multi-tenant**.
+- **Infrasys** — sistema de gestión de proyectos de obras. Desarrollo de múltiples módulos como parte del equipo asignado.
+
+**Forge** — POS para retail · *proyecto propio, en producción*
+
+- Diseño, desarrollo y despliegue completo de un punto de venta con **facturación electrónica integrada a SUNAT** (boletas, facturas, notas de crédito y débito) con certificado digital propio.
+- En uso en Grupo Bernachea SAC y otras tiendas; sustituyó a un POS sin control real de inventario y limitado a dos usuarios.
+- `React` `FastAPI` `PostgreSQL` · despliegue en DigitalOcean con nginx, Certbot y systemd.
+
+**Universidad Nacional Daniel Alomía Robles** — Huánuco · jun 2023 – jul 2024 · *Vue.js · Django · PostgreSQL*
+
+- Bolsa de trabajo para estudiantes: publicación de ofertas, registro de postulantes y seguimiento de postulaciones.
+- Carpeta documentaria para docentes: carga y control de documentación académica.
 
 ---
 
@@ -37,72 +81,64 @@ En paralelo mantengo el pie en el stack moderno — Java, Spring, Python, React 
 
 | | |
 |---|---|
-| **Mainframe** | COBOL · JCL · CICS · DB2 · VSAM · z/OS · TSO/ISPF · SDSF |
-| **Batch y datos** | {{DFSORT · GDG · Easytrieve · IMS — deja solo lo que uses}} |
-| **Ecosistema** | {{Endevor · ChangeMan · File-AID · Control-M · Xpediter · IBM MQ}} |
-| **Dominio banca** | Core bancario · Cuadre y conciliación · Batch nocturno · {{SWIFT · ISO 20022}} |
-| **Modernización** | Git · VS Code · Zowe · IBM Z Open Editor · APIficación de programas COBOL |
-| **Stack moderno** | Java · Spring · Python · React · Angular · SQL |
+| **Mainframe** | COBOL · JCL · CICS · DB2 · VSAM · SORT · ISPF/TSO · Endevor · z/OS |
+| **Backend** | Java 21 · Spring Boot · Python (FastAPI, Django) · Node.js |
+| **Frontend** | Angular · React · Vue.js · TypeScript |
+| **Bases de datos** | PostgreSQL · DB2 · MySQL · modelado de datos y DBML |
+| **Arquitectura** | Hexagonal · Multi-tenant · APIs REST |
+| **Herramientas** | Git · Linux · nginx · DigitalOcean |
+| **Metodología** | Scrum · análisis de impacto · documentación técnica |
 
 ---
 
-## Experiencia (trabajo privado)
+## Comunidad y formación
 
-La mayor parte de mi trabajo profesional está en código bancario cerrado que no puede publicarse. Estos son proyectos representativos, con el detalle limitado por confidencialidad:
-
-- **{{Core bancario — banca minorista}}**
-  {{Módulos COBOL/CICS/DB2 online y batch para ciclos de cuadre diario. Rol: mantenimiento evolutivo y correctivo.}}
-  `{{escala: p. ej. cartera de N millones de cuentas}}`
-
-- **{{Procesos de pago — batch nocturno}}**
-  {{Cadenas JCL/COBOL de conciliación nocturna. Rol: desarrollo y optimización de ventana batch.}}
-  `{{escala: p. ej. N millones de transacciones/noche}}`
-
-- **{{Proyecto 3}}**
-  {{Qué sistema, qué hiciste, con qué tecnología.}}
-
-> Los repositorios públicos de este perfil son proyectos propios, laboratorios y práctica — nunca código de cliente.
-
----
-
-## Certificaciones
-
-- {{Certificación — Emisor, año}} · [ver credencial]({{URL_CREDLY}})
-- {{Certificación — Emisor, año}}
+- **HolaMundo Day 2023** — participación en el evento ([charlas](https://www.youtube.com/playlist?list=PLNdFk2_brsRdi01BE_sWyQ8e9FBmdrxGz)).
+- **Curso completo de COBOL y desarrollo mainframe (z/OS)** — formación autogestionada sobre laboratorio propio en DB2, CICS y VSAM, con documentación técnica propia de COBOL/JCL, COBOL-CICS y COBOL-DB2.
 
 ---
 
 ## Actividad
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://{{TU-INSTANCIA}}.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=58a6ff&icon_color=58a6ff&text_color=9198a1&rank_icon=percentile">
-    <source media="(prefers-color-scheme: light)" srcset="https://{{TU-INSTANCIA}}.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=0969da&icon_color=0969da&text_color=59636e&rank_icon=percentile">
-    <img alt="Estadísticas de GitHub de ehud99" src="https://{{TU-INSTANCIA}}.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&rank_icon=percentile">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://{{TU-INSTANCIA}}.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=9198a1">
-    <source media="(prefers-color-scheme: light)" srcset="https://{{TU-INSTANCIA}}.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=0969da&text_color=59636e">
-    <img alt="Lenguajes más usados por ehud99" src="https://{{TU-INSTANCIA}}.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000">
-  </picture>
+  <img alt="Racha de contribuciones" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D">
 </p>
 
 <p align="center">
-  <img alt="Racha de contribuciones de ehud99" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D">
+  <img alt="Gráfico de actividad" src="https://github-readme-activity-graph.vercel.app/graph?username=ehud99&custom_title=Actividad&bg_color=00000000&color=9198a1&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&hide_border=true">
 </p>
 
+<!--
+  TARJETAS DE ESTADÍSTICAS — pendiente de activar.
+
+  Estas dos tarjetas necesitan una instancia propia de github-readme-stats para
+  poder contar repositorios privados (ver SETUP.md, paso 1). Sin ella saldrían
+  casi vacías, porque todo tu trabajo está en repos privados.
+
+  Cuando tengas tu dominio de Vercel:
+    1. Reemplaza TU-INSTANCIA por tu dominio real.
+    2. Borra esta línea de comentario de apertura y la de cierre.
+
 <p align="center">
-  <img alt="Gráfico de actividad de ehud99" src="https://github-readme-activity-graph.vercel.app/graph?username=ehud99&custom_title=Actividad&bg_color=00000000&color=9198a1&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&hide_border=true">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://TU-INSTANCIA.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=58a6ff&icon_color=58a6ff&text_color=9198a1&rank_icon=percentile">
+    <source media="(prefers-color-scheme: light)" srcset="https://TU-INSTANCIA.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=0969da&icon_color=0969da&text_color=59636e&rank_icon=percentile">
+    <img alt="Estadísticas de GitHub" src="https://TU-INSTANCIA.vercel.app/api?username=ehud99&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&rank_icon=percentile">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://TU-INSTANCIA.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=9198a1">
+    <source media="(prefers-color-scheme: light)" srcset="https://TU-INSTANCIA.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=0969da&text_color=59636e">
+    <img alt="Lenguajes más usados" src="https://TU-INSTANCIA.vercel.app/api/top-langs/?username=ehud99&layout=compact&langs_count=8&hide_border=true&bg_color=00000000">
+  </picture>
 </p>
+-->
 
 ---
 
 ## Contacto
 
-- **LinkedIn** — [{{tu-perfil}}]({{URL_LINKEDIN}})
-- **Email** — [{{tu@email.com}}](mailto:{{tu@email.com}})
-- **CV** — [{{descargar PDF}}]({{URL_CV}})
+- **LinkedIn** — [linkedin.com/in/ehudaguirre](https://www.linkedin.com/in/ehudaguirre/)
+- **Email** — [EhudAguirre@gmail.com](mailto:EhudAguirre@gmail.com)
+- **CV** — disponible a solicitud
 
-<br>
-
-<sub align="center">{{Fuera del terminal 3270: {{fun fact}}.}}</sub>
+<p align="center"><sub>Bachiller en Ingeniería de Sistemas e Informática · Universidad de Huánuco</sub></p>
