@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Abierto_a_oportunidades_en_Mainframe_y_Banca-0A66C2?style=flat-square" alt="Abierto a oportunidades en Mainframe y Banca">
+  <img src="https://img.shields.io/badge/Actualmente_aprendiendo_Mainframe-0A66C2?style=flat-square" alt="Actualmente aprendiendo Mainframe">
 </p>
 
 <div align="center">
@@ -102,10 +102,6 @@ En paralelo vengo construyendo perfil mainframe: un año analizando procesos bat
 
 <p align="center">
   <img alt="Racha de contribuciones" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D">
-</p>
-
-<p align="center">
-  <img alt="Gráfico de actividad" src="https://github-readme-activity-graph.vercel.app/graph?username=ehud99&custom_title=Actividad&bg_color=00000000&color=9198a1&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&hide_border=true">
 </p>
 
 <!--

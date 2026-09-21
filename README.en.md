@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Open_to_Mainframe_and_Banking_roles-0A66C2?style=flat-square" alt="Open to Mainframe and Banking roles">
+  <img src="https://img.shields.io/badge/Currently_learning_Mainframe-0A66C2?style=flat-square" alt="Currently learning Mainframe">
 </p>
 
 <div align="center">
@@ -102,10 +102,6 @@ Alongside that I have been building a mainframe profile: a year analysing real c
 
 <p align="center">
   <img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D">
-</p>
-
-<p align="center">
-  <img alt="Activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ehud99&custom_title=Activity&bg_color=00000000&color=9198a1&line=58a6ff&point=58a6ff&area=true&area_color=58a6ff&hide_border=true">
 </p>
 
 <!--
