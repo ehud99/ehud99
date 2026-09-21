@@ -12,12 +12,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Currently_learning_Mainframe-0A66C2?style=flat-square" alt="Currently learning Mainframe">
+  <a href="https://www.linkedin.com/in/ehudaguirre/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square" alt="LinkedIn"></a>
+  <a href="mailto:EhudAguirre@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square" alt="Email"></a>
 </p>
 
 <div align="center">
 
-Lima, Peru · UTC−5 · Hybrid or remote · Spanish (native) · English (technical reading)
+<sub>Lima, Peru · UTC−5 · Hybrid or remote · Open to opportunities · Spanish (native) · English (technical)</sub>
 
 </div>
 
@@ -29,30 +30,22 @@ I build enterprise applications with Java 21, Spring Boot, Angular and PostgreSQ
 
 Alongside that I have been building a mainframe profile: a year analysing real credit-card batch processes (JCL, COBOL, DB2) in a production environment, plus a self-built z/OS lab where I practise COBOL, JCL, CICS, VSAM and DB2. I am drawn to banking and legacy modernization projects, where that dual profile pays off.
 
-> Nearly all of my work lives in private company and client repositories. This profile describes **what I built, with which technology and at what scale** — not the code.
-
 ---
 
 ## Mainframe
 
 **Mainframe Development Intern · OLSSA** — Lima · Jan 2025 – Jan 2026
 
-- Analysis of **credit-card batch processes in production**: reading PROCs and JCL, identifying steps, input/output datasets, PARMLIB parameters and restart points.
-- Per-process data flow diagrams (files, programs, DB2 tables, copybooks, utilities) as documentation for impact analysis.
-- Review of production COBOL programs and of the card system's data model.
-- **Migration of COBOL programs to version 6.3.**
-- *Retrieve*, *Add* and *Update* operations on **Endevor** components from TSO.
-- Execution of jobs, programs and unit tests; validation of generated files.
+- Analysis of **credit-card batch processes in production**: PROCs and JCL, input/output datasets, PARMLIB parameters and restart points, with per-process data flow diagrams for impact analysis.
+- **Migration of COBOL programs to version 6.3**, plus review of production programs and of the card system's data model.
+- *Retrieve*, *Add* and *Update* operations on **Endevor** components from TSO; execution of jobs and unit tests.
 - Documentation of UAT promotions and support during the **nightly batch** on the production release.
-
-`z/OS` `COBOL` `JCL` `DB2` `SORT` `ISPF/TSO` `CICS` `Endevor`
 
 **Self-built z/OS lab**
 
-- Installed and configured a z/OS environment with DB2, CICS and VSAM for development practice.
-- **COBOL-CICS** — pseudo-conversational programs with `RETURN TRANSID` and COMMAREA, BMS maps (`DFHMSD`, `DFHMDI`, `DFHMDF`), `LINK` and `XCTL`, VSAM file access, and the CEDA, CEMT, CECI and CEDF transactions.
-- **COBOL-DB2** — embedded SQL, DCLGEN, precompilation and BIND, SQLCODE handling, cursors for multi-row results and null indicators.
-- My own technical documentation of the whole process, available on request.
+- A z/OS environment I installed and configured myself with DB2, CICS and VSAM.
+- **COBOL-CICS** — pseudo-conversational with `RETURN TRANSID` and COMMAREA, BMS maps, `LINK` and `XCTL`, VSAM file access and the CEDA, CEMT, CECI and CEDF transactions.
+- **COBOL-DB2** — embedded SQL, DCLGEN, precompilation and BIND, SQLCODE handling, cursors and null indicators.
 
 ---
 
@@ -60,20 +53,18 @@ Alongside that I have been building a mainframe profile: a year analysing real c
 
 **Partner Tech** — Lima · Jan 2026 – present · *Java 21 · Spring Boot · Angular · PostgreSQL · Scrum*
 
-- **Eternium** — cemetery management application. Took part in building the product, which implements **hexagonal architecture** (ports and adapters) to isolate the domain from infrastructure.
-- **Centrix** — document workflow platform. Took part in building the **approval flow engine** for the **multi-tenant** schema.
-- **Infrasys** — construction project management system. Developed several modules as part of the assigned team.
+- **Eternium** — cemetery management. Built with **hexagonal architecture** (ports and adapters) to isolate the domain from infrastructure.
+- **Centrix** — document workflow platform. Built the **approval flow engine** on a **multi-tenant** schema.
+- **Infrasys** — construction project management. Developed several modules of the application.
 
 **Forge** — retail POS · *personal project, in production*
 
-- End-to-end design, development and deployment of a point of sale with **electronic invoicing integrated with SUNAT** (Peru's tax authority) — receipts, invoices, credit and debit notes — using its own digital certificate.
-- In use at Grupo Bernachea SAC and other stores; replaced a POS with no real inventory control and a two-user limit.
-- `React` `FastAPI` `PostgreSQL` · deployed on DigitalOcean with nginx, Certbot and systemd.
+- Point of sale with **electronic invoicing integrated with SUNAT** (Peru's tax authority) — receipts, invoices, credit and debit notes — using its own digital certificate. In use at Grupo Bernachea SAC and other stores.
+- React · FastAPI · PostgreSQL, deployed on DigitalOcean with nginx, Certbot and systemd.
 
 **Universidad Nacional Daniel Alomía Robles** — Huánuco · Jun 2023 – Jul 2024 · *Vue.js · Django · PostgreSQL*
 
-- Student job board: posting vacancies, registering applicants and tracking applications.
-- Document folder for teaching staff: upload and control of academic documentation.
+- Student job board and a document folder for teaching staff.
 
 ---
 
@@ -81,13 +72,12 @@ Alongside that I have been building a mainframe profile: a year analysing real c
 
 | | |
 |---|---|
-| **Mainframe** | COBOL · JCL · CICS · DB2 · VSAM · SORT · ISPF/TSO · Endevor · z/OS |
-| **Backend** | Java 21 · Spring Boot · Python (FastAPI, Django) · Node.js |
-| **Frontend** | Angular · React · Vue.js · TypeScript |
-| **Databases** | PostgreSQL · DB2 · MySQL · data modelling and DBML |
-| **Architecture** | Hexagonal · Multi-tenant · REST APIs |
-| **Tooling** | Git · Linux · nginx · DigitalOcean |
-| **Ways of working** | Scrum · impact analysis · technical documentation |
+| **Mainframe** | ![COBOL](https://img.shields.io/badge/COBOL-052FAD?style=flat-square) ![JCL](https://img.shields.io/badge/JCL-052FAD?style=flat-square) ![CICS](https://img.shields.io/badge/CICS-052FAD?style=flat-square) ![DB2](https://img.shields.io/badge/DB2-052FAD?style=flat-square) ![VSAM](https://img.shields.io/badge/VSAM-052FAD?style=flat-square) ![SORT](https://img.shields.io/badge/SORT-052FAD?style=flat-square) ![ISPF/TSO](https://img.shields.io/badge/ISPF%2FTSO-052FAD?style=flat-square) ![Endevor](https://img.shields.io/badge/Endevor-052FAD?style=flat-square) ![z/OS](https://img.shields.io/badge/z%2FOS-052FAD?style=flat-square) |
+| **Backend** | ![Java 21](https://img.shields.io/badge/Java%2021-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) |
+| **Frontend** | ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| **Databases** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![DB2](https://img.shields.io/badge/DB2-052FAD?style=flat-square) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
+| **Tooling** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![nginx](https://img.shields.io/badge/nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white) |
+| **Architecture** | Hexagonal · Multi-tenant · REST APIs · Scrum |
 
 ---
 
@@ -101,15 +91,15 @@ Alongside that I have been building a mainframe profile: a year analysing real c
 ## Activity
 
 <p align="center">
-  <img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D">
+  <img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=ehud99&hide_border=true&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=9198A1&dates=9198A1&currStreakNum=9198A1&sideNums=9198A1&stroke=30363D&border=30363D&v=2">
 </p>
 
 <!--
   STATS CARDS — not enabled yet.
 
-  These two cards need a self-hosted github-readme-stats instance in order to
-  count private repositories (see SETUP.md, step 1). Without it they would come
-  out almost empty, since all of this work lives in private repos.
+  These need a self-hosted github-readme-stats instance in order to count
+  private repositories (see SETUP.md, step 2). Without it they would come out
+  almost empty.
 
   Once your Vercel domain is live:
     1. Replace TU-INSTANCIA with your real domain.
