@@ -4,18 +4,53 @@ Documento interno del repo. No aparece en el perfil: GitHub solo renderiza `READ
 
 ---
 
-## 1. Activar las tarjetas de estadísticas
+## 1. Mostrar tus contribuciones privadas ← lo más importante
 
-En `README.md` y `README.en.md`, la sección **Actividad** tiene dos tarjetas
-(estadísticas y lenguajes más usados) **comentadas a propósito**.
+**Estado: pendiente. Es un checkbox y es lo que más cambia tu perfil.**
+
+<https://github.com/settings/profile> → **"Include private contributions on my profile"**
+
+### Por qué
+
+Tu perfil te muestra a ti 1.280 contribuciones en el último año. Un visitante anónimo
+ve algo completamente distinto. Descargando el calendario público sin sesión iniciada:
+
+```
+nivel 0 (días vacíos): 363 días
+nivel 1:                 2 días
+nivel 2:                 2 días
+nivel 3:                 1 día
+nivel 4:                 2 días
+```
+
+Siete días con actividad en todo el año. Por eso la tarjeta de racha mostraba
+**10 Total Contributions**: no está fallando, está leyendo lo único que es público.
+Todo tu trabajo real está en repositorios privados y GitHub no lo expone por defecto.
+
+### Qué expone exactamente
+
+Solo los **recuentos** del calendario, como contribuciones anónimas. No publica nombres
+de repositorios, mensajes de commit, código ni organizaciones. Un visitante ve "hizo N
+contribuciones este día" sin poder saber dónde.
+
+Sin este ajuste, cualquier widget de actividad que pongas va a mentir a la baja, y un
+reclutador que abra tu perfil verá un calendario casi vacío.
+
+---
+
+## 2. Activar las tarjetas de estadísticas
+
+En ambos README, la sección **Actividad** tiene dos tarjetas (estadísticas y lenguajes
+más usados) **comentadas a propósito**.
 
 **Por qué están desactivadas:** la instancia pública `github-readme-stats.vercel.app`
-no tiene acceso a tu cuenta y **no puede ver repositorios privados**. Como los siete
-repos de tu trabajo son privados, las tarjetas mostrarían cifras casi en cero y
-lenguajes que no representan lo que haces. Vacías dicen algo peor que no estar.
+no tiene acceso a tu cuenta y no puede ver repositorios privados. Como los siete repos
+de tu trabajo son privados, las tarjetas mostrarían cifras en cero y lenguajes que no
+representan lo que haces.
 
-La racha y el gráfico de actividad sí están activos: esos leen el calendario de
-contribuciones, que **sí incluye tu actividad privada** si activas el ajuste del punto 2.
+> Ojo: el punto 1 **no** arregla esto. El ajuste de contribuciones privadas afecta al
+> calendario, no a la API de repositorios. Para que estas dos tarjetas cuenten repos
+> privados hace falta instancia propia con token. Son cosas independientes.
 
 ### Desplegar tu instancia
 
@@ -40,7 +75,7 @@ contribuciones, que **sí incluye tu actividad privada** si activas el ajuste de
 
 5. Despliega. Vercel te da un dominio tipo `mi-stats.vercel.app`.
 
-6. En ambos README:
+6. En `README.md` y `README.en.md`:
    - Reemplaza `TU-INSTANCIA` por tu dominio.
    - Borra la línea `<!--` de apertura y la línea `-->` de cierre del bloque.
 
@@ -52,30 +87,35 @@ contribuciones, que **sí incluye tu actividad privada** si activas el ajuste de
 
 ---
 
-## 2. Mostrar contribuciones privadas
-
-En <https://github.com/settings/profile> activa
-**"Include private contributions on my profile"**.
-
-Sin eso, tu gráfico de contribuciones y la racha salen casi vacíos aunque commitees a
-diario, porque todo tu trabajo está en repos privados. Es el ajuste que más cambia
-cómo se ve el perfil, y es gratis.
-
----
-
-## 3. Widgets de terceros: riesgo conocido
+## 3. Widgets de terceros
 
 | Widget | Servicio | Estado |
 |---|---|---|
-| Stats y lenguajes | tu instancia de Vercel | fiable, bajo tu control |
-| Racha de contribuciones | `streak-stats.demolab.com` | demo compartida, con cortes y rate limit documentados |
-| Gráfico de actividad | `github-readme-activity-graph.vercel.app` | el más frágil: cambió de host dos veces (Heroku y Cyclic cerraron) y tuvo caídas en septiembre de 2026 |
+| Stats y lenguajes | tu instancia de Vercel | fiable, bajo tu control (pendiente, punto 2) |
+| Racha de contribuciones | `streak-stats.demolab.com` | activo, responde 200; demo compartida con cortes y rate limit documentados |
+| ~~Gráfico de actividad~~ | `github-readme-activity-graph.vercel.app` | **eliminado del README** |
 
-Si alguno deja de cargar y queda el recuadro roto: autoalojarlo igual que el punto 1,
-o quitarlo del README. Un perfil sobrio no pierde nada sin el gráfico de actividad.
+### Por qué se eliminó el gráfico de actividad
+
+El servicio devuelve:
+
+```
+HTTP 402 — Payment required
+DEPLOYMENT_DISABLED
+```
+
+El deployment de Vercel del mantenedor está deshabilitado por facturación, así que la
+imagen sale rota para todo el mundo. No es una caída pasajera que se arregle esperando.
+El proyecto ya había cambiado de host dos veces antes (Heroku y Cyclic cerraron).
+
+Tampoco se pierde nada: GitHub ya dibuja tu calendario de contribuciones justo debajo
+del README en la página del perfil, así que el widget duplicaba información. Si aun así
+lo quieres, habría que autoalojarlo como en el punto 2.
+
+### Imágenes que siguen viéndose rotas
 
 GitHub sirve las imágenes externas por su proxy `camo.githubusercontent.com`, que cachea
-también los fallos. Si arreglas un widget y sigue viéndose roto, añadir un parámetro
+también los fallos. Si un widget se arregla y sigue saliendo roto, añadir un parámetro
 cualquiera a la URL (`&v=2`) fuerza a camo a tratarla como nueva.
 
 ---
@@ -86,7 +126,7 @@ cualquiera a la URL (`&v=2`) fuerza a camo a tratarla como nueva.
 contiene tu número de teléfono y este repositorio es público. Un archivo commiteado aquí
 queda accesible y permanece en el historial de git aunque después se borre.
 
-Los README dicen "CV disponible a solicitud". Si prefieres enlazarlo, las opciones sanas son:
+Los README dicen "CV disponible a solicitud". Si prefieres enlazarlo:
 
 - Subirlo a Google Drive o Dropbox con enlace de solo lectura y poner esa URL.
 - Generar una versión sin teléfono ni dirección, quitar `*.pdf` del `.gitignore` y
@@ -98,9 +138,9 @@ Los README dicen "CV disponible a solicitud". Si prefieres enlazarlo, las opcion
 ## 5. Publicar
 
 ```bash
-gh auth login          # una sola vez
 git push               # el remoto origin ya apunta a ehud99/ehud99
 ```
 
-Después de publicar, revisa <https://github.com/ehud99> y comprueba que las imágenes
-de la sección Actividad cargan bien.
+Después de publicar, abre <https://github.com/ehud99> **en una ventana de incógnito**.
+Es la única forma de ver el perfil como lo ve un reclutador: con tu sesión iniciada
+GitHub te enseña datos privados que los demás no ven.
