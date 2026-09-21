@@ -4,39 +4,29 @@ Documento interno del repo. No aparece en el perfil: GitHub solo renderiza `READ
 
 ---
 
-## 1. Mostrar tus contribuciones privadas ← lo más importante
+## 1. Mostrar tus contribuciones privadas — HECHO
 
-**Estado: pendiente. Es un checkbox y es lo que más cambia tu perfil.**
+Ajuste activado en <https://github.com/settings/profile> →
+**"Include private contributions on my profile"**.
 
-<https://github.com/settings/profile> → **"Include private contributions on my profile"**
+Efecto medido sobre el calendario publico (consultado sin sesion iniciada):
 
-### Por qué
+| | antes | despues |
+|---|---|---|
+| Dias con actividad | 7 | 165 |
+| Dias vacios | 363 | 206 |
+| Total que reporta el widget | 10 | 1.282 |
 
-Tu perfil te muestra a ti 1.280 contribuciones en el último año. Un visitante anónimo
-ve algo completamente distinto. Descargando el calendario público sin sesión iniciada:
+Solo se exponen los **recuentos** del calendario, como contribuciones anonimas: no
+publica nombres de repositorios, mensajes de commit, codigo ni organizaciones.
 
-```
-nivel 0 (días vacíos): 363 días
-nivel 1:                 2 días
-nivel 2:                 2 días
-nivel 3:                 1 día
-nivel 4:                 2 días
-```
+### Si la tarjeta sigue mostrando los numeros viejos
 
-Siete días con actividad en todo el año. Por eso la tarjeta de racha mostraba
-**10 Total Contributions**: no está fallando, está leyendo lo único que es público.
-Todo tu trabajo real está en repositorios privados y GitHub no lo expone por defecto.
-
-### Qué expone exactamente
-
-Solo los **recuentos** del calendario, como contribuciones anónimas. No publica nombres
-de repositorios, mensajes de commit, código ni organizaciones. Un visitante ve "hizo N
-contribuciones este día" sin poder saber dónde.
-
-Sin este ajuste, cualquier widget de actividad que pongas va a mentir a la baja, y un
-reclutador que abra tu perfil verá un calendario casi vacío.
-
----
+Es el proxy de imagenes de GitHub. `camo.githubusercontent.com` cachea las imagenes
+externas, incluidas las respuestas antiguas, y no siempre refresca aunque el servicio
+de origen ya devuelva datos nuevos. La URL de la racha en ambos README lleva `&v=2`
+justo para forzar a camo a tratarla como una imagen nueva. Si vuelve a quedarse
+pegada, sube el numero: `&v=3`, `&v=4`, y commitea.
 
 ## 2. Activar las tarjetas de estadísticas
 
