@@ -13,11 +13,6 @@
   <a href="mailto:EhudAguirre@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square" alt="Email"></a>
 </p>
 
-<div align="center">
-
-<sub>Lima, Perú · UTC−5 · Híbrido o remoto · Abierto a oportunidades · Español nativo · Inglés técnico</sub>
-
-</div>
 
 ---
 
