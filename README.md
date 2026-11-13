@@ -1,5 +1,3 @@
-<h1 align="center">Desarrollador Full Stack · Mainframe COBOL</h1>
-
 <p align="center">
   <sub>Java 21 · Spring Boot · Angular · PostgreSQL &nbsp;—&nbsp; COBOL · JCL · CICS · DB2 · z/OS</sub>
 </p>
